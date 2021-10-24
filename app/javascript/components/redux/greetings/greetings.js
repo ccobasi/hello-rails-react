@@ -1,4 +1,4 @@
-import getRandomGreeting from './../services/greetingAPI';
+import getRandomGreeting from './greetingAPI';
 // Actions
 const FETCH_STARTED = 'hello-rails-react/app/javascript/redux/greetings/FETCH_STARTED';
 const FETCH_SUCCEDED = 'hello-rails-react/app/javascript/redux/greetings/FETCH_SUCCEDED';
