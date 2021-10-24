@@ -32,5 +32,8 @@
     "stylelint-scss": "^3.21.0",
     "webpack-dev-server": "^3",
     "yarn": "^1.22.17"
+  },
+  "browser": {
+    "[module-name]": false   
   }
 }
