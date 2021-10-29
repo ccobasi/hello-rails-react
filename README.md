@@ -75,9 +75,9 @@ To run the linters included in this repository, go to the root directory of your
 - for Rubocop, `rubocop .`
 
 ## Author
-👨‍💻 **Jocyline Magero**
+👨‍💻 **Chukwuma Obasi**
 - Github: [@ccobasi](https://github.com/ccobasi/)
-- Twitter: [@MagzCelyn](https://twitter.com/obasichux)
+- Twitter: [@Obasichux](https://twitter.com/obasichux)
 - Linkedin: [linkedin](https://www.linkedin.com/in/chukwuma-obasi/)
 ## 🤝 Acknowledgements
 
