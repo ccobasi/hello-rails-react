@@ -1,84 +1,88 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Hello-Rails-Back-End
 
-# hello-world-react-rails
+> How to setup a Ruby on Rails API-only back-end
 
-<br>
-<p align="center">This app is built using the <i>webpacker</i> and <i>react-rails</i> gems. This app is for learning purposes only, to understand how to build a Rails app integated with React and Redux.
-The app loads a different greeting message every time you reload the page. The controller gets the message from a query made to a local PostgreSQL db.</p>
-<br>
+Project Description:
+In this project, I have:
+Set up Postgres database.
+Created an API endpoint that selects a random greeting from greetings table via v1/greetings.
 
-## About
-This app shows a different greeting message when you refresh the page. It uses redux to handle the global state of the app and webpacker to compile JavaScript code.
+Note: Random greeting is Display on refresh
 
-API calls are made directly from the component to the Rails API endpoint.
+## REACT FRONT-END
+Check Out The Random Greeting React Front-End [Here](https://thirsty-almeida-f3249f.netlify.app/)
 
-### Built With
-- HTML, CSS, JavaScript (ES6)
-- Ruby
-- Rails
-- gem 'react-rails'
-- gem 'webpacker', '~> 5.0'
-- gem 'spring'
-- PostgreSQL
-- react 17.0.2
-- react_ujs 2.6.1
-- react-redux 7.2.5
-- react-router-dom 5.3.0
-- redux 4.1.1
-- redux-logger
-- redux-thunk
-- Linters: Rubocop, ESLint
-- VS Code
+## Built With
+
+- Ruby v2.7.0
+- Ruby on Rails v5.2.4
+- Postgres
+- Rubcop
+
 
 ## Getting Started
 
-To get a local copy up and running, follow these simple example steps.
+To get a local copy up and running follow these simple steps.
+
+- To get a local copy of this project, run
+`git clone https://github.com/ccobasi/hello-rails-react.git`
+
+- Change into the project directory, run
+`cd hello-rails-react`
 
 ### Prerequisites
-- A browser to open the main file
-- Ruby 2.6.8
-- Node.js
-- NPM
-- Yarn
 
-### Get files
-1. Open your terminal or command prompt.
-2. If you do not have git installed in your system, skip this step and go to step 3; otherwise, go to the directory where you want to copy the project files and clone it by copying this text into your command prompt/terminal: `https://github.com/ccobasi/hello-rails-react.git`.
-<br>Now go to the ***"Install Dependencies"*** section
-3. Download the program files by clicking on the green button that says “**Code**” on the upper right side of the project frame.
-4. You will see a dropdown menu. Click on “**Download ZIP**.”
-5. Go to the directory where you downloaded the **ZIP file** and open it. Extract its contents to any directory you want in your system.
+Ruby: 2.6.3
+Rails: 5.2.3
+Postgres: >=9.5
 
-### Install Dependencies
-1. If you are not in your system terminal/command prompt already, please open it and go to the directory where you cloned the remote repository or extracted the project files.
-2. While in the project root directory, type `bundle install`. This command will install all the necessary gems in your system.
-3. Then you can type <code>yarn install --check-files</code>.
+### Setup
+Install webpacker with:
 
-### Database Setup
+```
+rails webpacker:instal
+```
 
-- In your terminal, while in the root dir of your Rails project, type <code>bin/rails db:setup</code> to create your local databases, load the schema, and initialize with the seed data.
+Install gems with:
 
-You are all set now!
-## Usage
+```
+bundle install
+```
 
-1. In your terminal, run <code>bin/rails server</code> while inside the root directory of the repository files
-2. Go to your browser of choice and enter this URL: [http://localhost:3000](http://localhost:3000)
-3. \[Optional\] if you want to make changes to the JavaScript file and see changes immediately, run `./bin/webpack-dev-server`
-4. Refresh the page to see a different greeting message! 😸
+Setup database with:
 
-**Note:<br>_ These commands will not stop on their own. If you change something in your project files, it will recompile and reload the page in your browser. To exit, hit "ctrl + c"_**
+```
+   rails db:create
+   rails db:migrate
+   rails db:seed
+```
 
-## Linters
-To run the linters included in this repository, go to the root directory of your repository and copy/paste the following commands into your terminal:
-(**Note:** Make sure you run `npm install` before you do this)
-- for ESlint, `npx eslint <path of file>`
-- for Rubocop, `rubocop .`
+### Github Actions
+
+To make sure the linters' checks using Github Actions work properly, you should follow the next steps:
+
+1. On your recently forked repo, enable the GitHub Actions in the Actions tab.
+2. Create the `feature/branch` and push.
+3. Start working on your milestone as usual.
+4. Open a PR from the `feature/branch` when your work is done.
+
+
+### Usage
+
+Start server with:
+
+```
+    rails server
+```
+
+Open `http://localhost:3000/` in your browser.
+
 
 ## Author
-👨‍💻 **Jocyline Magero**
+👨‍💻 **Chukwuma Obasi**
 - Github: [@ccobasi](https://github.com/ccobasi/)
-- Twitter: [@MagzCelyn](https://twitter.com/obasichux)
-- Linkedin: [linkedin](https://www.linkedin.com/in/chukwuma-obasi/)
+- Twitter: [@Obasichux](https://twitter.com/obasichux)
+- Linkedin: [chukwuma-obasi](https://www.linkedin.com/in/chukwuma-obasi/)
 ## 🤝 Acknowledgements
 
 Tutorial:
